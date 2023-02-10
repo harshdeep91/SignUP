@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer type="module"></script>
+</head>
+<body>
+    <div class="signUp">
+        <form class="signUpForm" autocomplete="on">
+             <div class="image">
+                <div class="imgSignUp">
+                    <label for="files" class=" fa fa-camera " style="font-size: 60px; "></label>
+                    <input id="files" style="display: none;" type="file" accept="image/*" required>
+                </div>
+                <div>Upload Your Profile Photo</div>
+            </div>
+            <div class="changeImg">
+                <img class="uploadedImg" src="paris.jpeg" style="z-index: -1;" > 
+                <label for="files" class=" fa fa-camera " style="font-size: 35px; z-index: 1; position: absolute; top: 33%; left: 52%;"></label>
+            </div>
+    
+            <input class="name" type="text" placeholder="Name" required></input>
+            <input class="email" type="email" placeholder="Email" required></input>
+            <input  class="password" type="password" placeholder="Password" required></input>
+            <input class="confirmPassword" type="password" placeholder="Confirm Password" required></input>
+            <button class="signUpButton">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
