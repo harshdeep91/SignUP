@@ -69,7 +69,7 @@ signUpForm.addEventListener("submit", (e) => {
         body:formData
        }).then((res)=>res.json())
        .then((res)=>{
-        if(res.message=="success")
+        if(res.status=="success")
         location.replace("https://www.w3schools.com")
         else
         alert("Mail is in already use")
