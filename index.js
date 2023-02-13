@@ -31,7 +31,7 @@ signUpForm.addEventListener("submit", (e) => {
     confirmPassword.value = "";
     alert("Password is not Matching");
   } else {
-    if (passwordChecker(password.value) == "Extremely difficult. ") {
+    if (passwordChecker(Password.value) == "Extremely difficult. ") {
       sendrequest();
       alert("Your sign up is saved");
     } else alert("Please Change Your Password");
