@@ -15,7 +15,7 @@
              <div class="image">
                 <div class="imgSignUp">
                     <label for="files" class=" fa fa-camera " style="font-size: 60px; "></label>
-                    <input id="files" style="display: none;" type="file" accept="image/*" required>
+                    <input id="files" style="display: none;" type="file" accept="image/*" name="image" required>
                 </div>
                 <div>Upload Your Profile Photo</div>
             </div>
@@ -24,10 +24,17 @@
                 <label for="files" class=" fa fa-camera " style="font-size: 35px; z-index: 1; position: absolute; top: 33%; left: 52%;"></label>
             </div>
     
-            <input class="name" type="text" placeholder="Name" required></input>
-            <input class="email" type="email" placeholder="Email" required></input>
-            <input  class="password" type="password" placeholder="Password" required></input>
-            <input class="confirmPassword" type="password" placeholder="Confirm Password" required></input>
+            <input class="name" type="text" placeholder="Name" name="Name" required></input>
+            <input class="email" type="email" placeholder="Email" name="Email" required></input>
+            <input class="password" type="password" placeholder="Password" name="Password" required></input>
+            <div id="message">Type Password</div>
+            <input class="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword" required></input>
+            <!-- <div class="otp-verification">
+            <input class="otpInput" type="text" placeholder="Disabled" readonly ></input>
+            <div id="otp-count">Click to Verify Email</div>
+            <button class="send otp" >Send Otp</button>
+            <button class="verify otp" >Verify Otp</button>
+            </div> -->
             <button class="signUpButton">Sign Up</button>
         </form>
     </div>

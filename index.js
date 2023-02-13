@@ -1,5 +1,5 @@
 import passwordChecker from "./passwordChecker.js";
-
+const imageData = null;
 const image = document.querySelector(".image");
 image.addEventListener("change", (e) => {
   const files = document.getElementById("files").files;
@@ -17,15 +17,7 @@ image.addEventListener("change", (e) => {
   };
 });
 
-const password = document.querySelector(".password");
-password.addEventListener("change", (e) => {
-  // console.log(e.target.value);
-  alert(passwordChecker(e.target.value));
-  // console.log(e.target.value);
-  // console.log(password.value);
-  // console.log("hello");
-});
-
+document.querySelector(".password").addEventListener("keyup", (e) => document.querySelector("#message").textContent=passwordChecker(e.target.value));
 const signUpForm = document.querySelector(".signUpForm");
 
 signUpForm.addEventListener("submit", (e) => {
@@ -38,12 +30,36 @@ signUpForm.addEventListener("submit", (e) => {
   if (Password.value != confirmPassword.value) {
     confirmPassword.value = "";
     alert("Password is not Matching");
-  }else
-  {
-    if(passwordChecker(password.value)=="Extremely difficult. ")
-      alert("Your sign up is saved")
-      else
-      alert("Please Change Your Password")
+  } else {
+    if (passwordChecker(password.value) == "Extremely difficult. ") {
+      sendrequest();
+      alert("Your sign up is saved");
+    } else alert("Please Change Your Password");
   }
-  
 });
+
+// const sendOtp= document.querySelector(".send");
+// console.log(sendOtp);
+// sendOtp.addEventListener("click",(e)=>{
+//   e.preventDefault();
+//   const otpInput=document.querySelector(".otpInput");
+//   otpInput.readOnly=false;
+//   otpInput.placeholder="OTP";
+
+//   // if(document.querySelector(".email").value==)
+//   let count=30;
+//   const otpCount= document.querySelector("#otp-count");
+//   console.log(otpCount);
+//   setInterval(()=>{
+//     otpCount.innerText=`Resend otp in ${count--} Seconds`;
+//     if(count==-1)
+//     clearInterval();
+//   },1000)
+
+// })
+
+function sendrequest(){
+  const formData = new FormData(signUpForm);
+      formData.delete("confirmPassword");
+      for (let item of formData) console.log(item[0], item[1]);
+}
