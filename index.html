@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js" defer type="module"></script>
-</head>
-<body>
-    <div class="signUp">
-        <form class="signUpForm" autocomplete="on">
-             <div class="image">
-                <div class="imgSignUp">
-                    <label for="files" class=" fa fa-camera " style="font-size: 60px; "></label>
-                    <input id="files" style="display: none;" type="file" accept="image/*" name="image" required>
-                </div>
-                <div>Upload Your Profile Photo</div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sign Up</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="index.js" defer type="module"></script>
+   </head>
+   <body>
+      <div id="signUp">
+         <form id="signUpForm" autocomplete="on">
+            <div id="image">
+               <div id="imgSignUp">
+                  <label for="files" class=" fa fa-camera " style="font-size: 60px; "></label>
+                  <input id="files" style="display: none;" type="file" accept="image/*" name="image" required>
+               </div>
+               <div>Upload Your Profile Photo</div>
             </div>
-            <div class="changeImg">
-                <img class="uploadedImg" src="paris.jpeg" style="z-index: -1;" > 
-                <label for="files" class=" fa fa-camera " style="font-size: 35px; z-index: 1; position: absolute; top: 33%; left: 52%;"></label>
+            <div id="changeImg">
+               <img id="uploadedImg" src="paris.jpeg" style="z-index: -1;" > 
+               <label for="files" class=" fa fa-camera " style="font-size: 35px; z-index: 1; position: absolute; top: 33%; left: 52%;"></label>
             </div>
-    
-            <input class="name" type="text" placeholder="Name" name="Name" required autocomplete="username"></input>
-            <input class="email" type="email" placeholder="Email" name="Email" required autocomplete="email"></input>
-            <input class="password" type="password" placeholder="Password" name="Password" required autocomplete="new-password"></input>
+            <input id="name" type="text" placeholder="Name" name="Name" required autocomplete="username"></input>
+            <input id="email" type="email" placeholder="Email" name="Email" required autocomplete="email"></input>
+            <input id="password" type="password" placeholder="Password" name="Password" required autocomplete="new-password"></input>
             <div id="message">Type Password</div>
-            <input class="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword" required autocomplete="new-password"></input>
-            <!-- <div class="otp-verification">
-            <input class="otpInput" type="text" placeholder="Disabled" readonly ></input>
-            <div id="otp-count">Click to Verify Email</div>
-            <button class="send otp" >Send Otp</button>
-            <button class="verify otp" >Verify Otp</button>
-            </div> -->
-            <button class="signUpButton">Sign Up</button>
-        </form>
-    </div>
-</body>
+            <input id="confirmPassword" type="password" placeholder="Confirm Password" name="confirmPassword" required autocomplete="new-password"></input>
+            <button id="signUpButton">Sign Up</button>
+         </form>
+      </div>
+   </body>
 </html>

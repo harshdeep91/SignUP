@@ -1,14 +1,14 @@
 body{
     background-color: #DFF1F7;
 }
-.signUp{
+#signUp{
     display: flex;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
 }
-.signUpForm{
+#signUpForm{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -16,7 +16,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.image{
+#image{
 
     display: flex;
     flex-direction: column;
@@ -34,18 +34,18 @@ input,#message{
     border-radius: 30px;
     font-size: medium;
 }
-.imgSignUp:hover{
+#imgSignUp:hover{
     color:#3E9AD7;
 }
-.imgSignUp{
+#imgSignUp{
     color:  #7e939b;
     margin: 5%;
     
 }
-.fa{
+#fa{
     cursor: pointer;
 }
-.signUpButton{
+#signUpButton{
     width: 30%;
     height: 10%;
     background-color: #D2ECF3;
@@ -54,11 +54,11 @@ input,#message{
     /* 3E9AD7; */
     cursor: pointer;
 }
-.signUpButton:hover{
+#signUpButton:hover{
     background-color:#3E9AD7;
     color: white;
 }
-.changeImg{
+#changeImg{
     
     display: none;
     width: 30%;
@@ -67,13 +67,13 @@ input,#message{
     justify-content: center;
     align-items: center;
 }
-.uploadedImg{
+#uploadedImg{
     object-fit: cover;
     aspect-ratio: 1 / 1;
     height: 100%; 
     border-radius: 50%;
 }
-.otp-verification{
+#otp-verification{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,12 +83,12 @@ input,#message{
     border-radius: 30px;
     font-size: medium;
 }
-.otpInput{
+#otpInput{
     height: 90%;
     width: 30%;
     font-weight: bold;
 }
-.otp{
+#otp{
     width: 25%;
     height: 90%;
     background-color: #D2ECF3;
@@ -97,7 +97,7 @@ input,#message{
     /* 3E9AD7; */
     cursor: pointer;
 }
-.otp:hover{
+#otp:hover{
     background-color:#3E9AD7;
     color: white;
 }
