@@ -37,7 +37,6 @@ signUpForm.addEventListener("submit", (e) => {
     } else alert("Please Change Your Password");
   }
 });
-
 // const sendOtp= document.querySelector(".send");
 // console.log(sendOtp);
 // sendOtp.addEventListener("click",(e)=>{
@@ -70,7 +69,7 @@ signUpForm.addEventListener("submit", (e) => {
        }).then((res)=>res.json())
        .then((res)=>{
         if(res.status=="success")
-        location.replace("https://www.w3schools.com")
+        location.replace(window.location.origin+"/login.html")
         else
         alert("Mail is in already use")
        });
