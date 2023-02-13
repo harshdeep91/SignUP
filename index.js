@@ -33,7 +33,7 @@ signUpForm.addEventListener("submit", (e) => {
   } else {
     if (passwordChecker(Password.value) == "Extremely difficult. ") {
       sendrequest();
-      alert("Your sign up is saved");
+      // alert("Your sign up is saved");
     } else alert("Please Change Your Password");
   }
 });
