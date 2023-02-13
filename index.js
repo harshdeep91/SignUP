@@ -58,12 +58,20 @@ signUpForm.addEventListener("submit", (e) => {
 
 // })
 
-function sendrequest(){
+ function sendrequest(){
   const formData = new FormData(signUpForm);
       formData.delete("confirmPassword");
+      // formData.delete("image");
+      for(let item of formData)
+      console.log(item[0],item[1]);
        fetch("http://localhost:8090/api/signup",{
         method:"POST",
         body:formData
        }).then((res)=>res.json())
-       .then((res)=>console.log(res));
+       .then((res)=>{
+        if(res.message=="success")
+        location.replace("https://www.w3schools.com")
+        else
+        alert("Mail is in already use")
+       });
 }
